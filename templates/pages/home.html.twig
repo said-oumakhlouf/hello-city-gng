@@ -1,14 +1,12 @@
 {% extends 'base.html.twig' %}
 
+{% block title 'Hello City !' %}
 {% block body %}
-    <h1>Hello from Quebec !</h1>
 
-    <p>It's currently {{ 'now'|date('h:i A') }}.</p>
+    <img src="{{ asset('/images/drapeau-canada.jpg') }}" alt="drapeau-canada" class=" mt-12 rounded shadow-md">
 
-    <footer>
-        <p>
-            &copy; Copyright {{ 'now'|date('Y') }} 
-            &middot; <a href="#">About Us</a> 
-        </p>
-    </footer>
+    <h1 class="mt-5 text-3xl sm:text-5xl font-semibold text-indigo-600">Hello from Canada !</h1>
+
+    <p class="text-lg text-gray-800">It's currently {{ 'now'|date('h:i A') }}.</p>
+
 {% endblock %}
